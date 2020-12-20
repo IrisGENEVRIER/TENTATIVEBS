@@ -1,32 +1,59 @@
-.navbar { 
-  background-color: white;
+/* stylelint-disable property-no-vendor-prefix */
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
 }
 
-.navbar-brand {
-  color: #236973;
-}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+  }
 
-#eshop, .nav-link {
-  margin-right: 2em !important;
-  text-decoration: none;
-}
+  .row-offcanvas-right {
+    right: 0;
+  }
 
-ul, li {
-  list-style-type: none;
-}
+  .row-offcanvas-left {
+    left: 0;
+  }
 
-.nav-link:hover {
-  background-color: #E8EFF0;
-  color: #236973; }
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
 
-.navbar-collapse {
-  justify-content: flex-end;
-}
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
 
-.navbar-toggler {
-  background:#fff !important;
-}
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
 
-.bg-primary {
-  background-color: white !important;
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
 }
