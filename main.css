@@ -1,14 +1,27 @@
 .navbar { 
-  background: white;
+  background-color: white;
 }
 
-.nav-link , .navbar-brand{ color: #236973; cursor: pointer;}
+.nav-link , .navbar-brand {
+  color: #236973;
+}
 
-.nav-link{ margin-right: 1em !important;}
+.nav-link {
+  margin-right: 1em !important;
+}
 
-.nav-link:hover{ background: #E8EFF0; color: #236973; }
+.nav-link:hover {
+  background-color: #E8EFF0;
+  color: #236973; }
 
-.navbar-collapse{ justify-content: flex-end;}
+.navbar-collapse {
+  justify-content: flex-end;
+}
 
-.navbar-toggler{  background:#fff !important;}
+.navbar-toggler {
+  background:#fff !important;
+}
 
+.bg-primary {
+  background-color: white !important;
+}
