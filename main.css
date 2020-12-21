@@ -1,4 +1,4 @@
-.navbar>.container, .navbar>.container-fluid {
+.navbar {
   display: flex;
   flex-wrap: nowrap;
   }
